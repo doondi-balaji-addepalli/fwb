@@ -1,0 +1,18 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Add your deployment logic here
+      - name: Deploy step (placeholder)
+        run: echo "Deploying your app..."
