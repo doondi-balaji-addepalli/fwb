@@ -31,7 +31,7 @@ export const authOptions: any = {
               user.password!
             );
             if (isPasswordCorrect) {
-              return user;
+              return user as any;
             }
           }
         } catch (err: any) {
